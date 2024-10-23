@@ -55,5 +55,13 @@ nav .jw-menu .jw-menu-item .jw-menu-link.js-active-menu-item {
   background-color: #0feea4;
   color: white;
 }
+.container{
+  margin-bottom: 44px;
+}
+
+.jw-header-title-container{
+  margin-block-start: 22px;
+  margin-left: 33px;
+}
 
 /*# sourceMappingURL=styles.css.map */
