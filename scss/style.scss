@@ -1,31 +1,72 @@
-// styles.scss
-
+// Define color variables
 $primary-color: #3498db;
+$hover-color: #2980b9;
+$text-color: white;
+$active-color: #1abc9c;
 $font-stack: 'Helvetica', sans-serif;
 
 body {
     font-family: $font-stack;
-    background-color: #f4f4f4;
 }
 
 header {
     background-color: $primary-color;
-    color: white;
-    padding: 10px;
+    padding: 20px 0;
 
-    h1 {
-        margin: 0;
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        .jw-header-logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-right: 15px;
+            }
+
+            .jw-header-title {
+                font-size: 24px;
+                color: $text-color;
+            }
+        }
     }
 }
 
 nav {
-    ul {
+    background-color: $primary-color;
+
+    .jw-menu {
         list-style: none;
         padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
 
-        li {
-            display: inline;
-            margin-right: 15px;
+        .jw-menu-item {
+            margin: 0 15px;
+
+            .jw-menu-link {
+                color: $text-color;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+
+                &:hover {
+                    background-color: $hover-color;
+                    color: white;
+                }
+
+                &.js-active-menu-item {
+                    background-color: $active-color;
+                    color: white;
+                }
+            }
         }
     }
 }
