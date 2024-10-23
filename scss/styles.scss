@@ -1,8 +1,8 @@
 // Define color variables
 $primary-color: #3498db;
-$hover-color: #2980b9;
+$hover-color: #1abc9c;
 $text-color: white;
-$active-color: #1abc9c;
+$active-color: #0feea4;
 $font-stack: 'Helvetica', sans-serif;
 
 body {
@@ -12,6 +12,7 @@ body {
 header {
     background-color: $primary-color;
     padding: 20px 0;
+    margin-bottom: 55px;
 
     .header-wrap {
         display: flex;

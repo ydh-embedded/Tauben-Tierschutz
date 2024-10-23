@@ -5,6 +5,7 @@ body {
 header {
   background-color: #3498db;
   padding: 20px 0;
+  margin-bottom: 55px;
 }
 header .header-wrap {
   display: flex;
@@ -47,11 +48,11 @@ nav .jw-menu .jw-menu-item .jw-menu-link {
   transition: background-color 0.3s, color 0.3s;
 }
 nav .jw-menu .jw-menu-item .jw-menu-link:hover {
-  background-color: #2980b9;
+  background-color: #1abc9c;
   color: white;
 }
 nav .jw-menu .jw-menu-item .jw-menu-link.js-active-menu-item {
-  background-color: #1abc9c;
+  background-color: #0feea4;
   color: white;
 }
 
