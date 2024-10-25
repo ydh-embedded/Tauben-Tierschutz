@@ -2,16 +2,30 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
+h1 {
+
+  color: #5ab0e9;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 header {
   background-color: #3498db;
   padding: 20px 0;
   margin-bottom: 55px;
 }
+
 header .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+.image-container {
+  display: flex; /* Make the image container a flex container */
+  align-items: center; /* Center the image vertically */
+  justify-content: flex-start; /* Align the image to the left */
+  padding-left: 3rem;
 }
 header .header-wrap .jw-header-logo {
   display: flex;

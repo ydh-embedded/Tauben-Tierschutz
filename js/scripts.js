@@ -29,25 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menuModal = document.getElementById('menu-modal');
-    const closeButton = document.querySelector('.close-button');
 
-    // Open the modal when the menu toggle button is clicked
-    menuToggle.addEventListener('click', function() {
-        menuModal.style.display = 'block'; // Show the modal
-    });
 
-    // Close the modal when the close button is clicked
-    closeButton.addEventListener('click', function() {
-        menuModal.style.display = 'none'; // Hide the modal
-    });
 
-    // Close the modal when clicking anywhere outside of the modal content
-    window.addEventListener('click', function(event) {
-        if (event.target === menuModal) {
-            menuModal.style.display = 'none'; // Hide the modal
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the current URL ends with "index.html"
+    if (window.location.pathname.endsWith("index.html")) {
+        // Select the "Startseite" menu item and hide it
+        const startseiteMenuItem = document.querySelector('.jw-menu-item a[href="/"]');
+        if (startseiteMenuItem) {
+            startseiteMenuItem.parentElement.style.display = 'none';
         }
-    });
+    }
 });
